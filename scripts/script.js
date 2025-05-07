@@ -1,4 +1,3 @@
-require('dotenv').config();
 
 document.addEventListener("click", async (e) => {
    const img = e.target;
@@ -6,7 +5,8 @@ document.addEventListener("click", async (e) => {
     console.log(e.target.src);
 
     const imgSrc = img.src;
-    const apikey = process.env.API_KEY;
+
+    const apikey = "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"
 
 
     //used groq api documentation for these parameters. 
