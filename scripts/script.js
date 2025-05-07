@@ -1,10 +1,13 @@
+require('dotenv').config();
+
 document.addEventListener("click", async (e) => {
    const img = e.target;
    if(img.tagName.toLowerCase() !== "img") return;
     console.log(e.target.src);
 
     const imgSrc = img.src;
-    const apikey = "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";
+    const apikey = process.env.API_KEY;
+
 
     //used groq api documentation for these parameters. 
     const bodyinfo = {
