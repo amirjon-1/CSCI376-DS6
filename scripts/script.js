@@ -6,7 +6,8 @@ document.addEventListener("click", async (e) => {
 
     const imgSrc = img.src;
 
-    const apikey = "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"
+    // const apikey = "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"
+    const apikey= "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";
 
 
     //used groq api documentation for these parameters. 
@@ -50,7 +51,7 @@ document.addEventListener("click", async (e) => {
 
         const data = await response.json();
 
-        alert(`The image description is : ${data.choices?.[0]?.message?.content}`);
+        alert(`The description of the image is : ${data.choices?.[0]?.message?.content}`);
 
     } catch (error) {
         console.error("There has been an error: ", error);
