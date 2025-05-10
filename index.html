@@ -15,6 +15,12 @@
             margin-bottom: 1rem;
             color:white;
         }
+        h4 {            
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color:white;
+
+        }
 
         #description {
             font-size: 1rem;
@@ -25,7 +31,14 @@
             background: black;
             padding: 2rem;
             border-radius: 10px;
-            text-align: center;
+        }
+        ul{
+            font-size: 1rem;
+            padding: 0;
+            color: white;
+        }
+        li {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -34,6 +47,16 @@
         <h2>Descriptify</h2>
         <img style="width: 200px; height: auto; border-radius: 5px; margin-bottom: 1rem;" src="img/ds.png">
         <p id="description">Click on an image to get its description.</p>
+        <h4>Instructions:</h4>
+        <ul>
+            <li>Click any image to get its description instantly.</li>
+            <li>This works only for certain image types shown on the page.</li>
+            <li>Most images are under <code>&lt;img&gt;</code> tags; others may not be supported.</li>
+            <li>Some images link to external sites; our extension opens these in a new tab.</li>
+            <li>Simply return to the original page to view your results.</li>
+        </ul>
     </div>
+
+    <script src="scripts/backend.js"></script>
 </body>
 </html>
