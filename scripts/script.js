@@ -28,7 +28,7 @@ document.addEventListener("click", async (e) => {
      const imgSrc = img.src;
  
      //this is not wise to put api key here but it doesn't have any unsafe permissions so it is ok
-     const apikey = "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"
+     const apikey = "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"
  
  
      //used groq api documentation for these parameters. 
